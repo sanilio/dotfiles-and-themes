@@ -8,7 +8,7 @@ create_symlink() {
     local target_file=$2
 
     if [ -e "$source_file" ]; then
-        ln -sf "$source_file" "$target_file" && echo "Created symlink: $target_file -> $source_file"
+        ln -sf "$source_file" "$target_file" && echo "Created symlink: $source_file -> $target_file"
     else
         echo "Source file does not exist: $source_file"
     fi

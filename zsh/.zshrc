@@ -82,7 +82,10 @@ plugins=(
 	tmux
 	common-aliases
 )
+
+# zsh-completions instructions say to add this line before sourcing oh-my-zsh
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -108,13 +111,11 @@ export EDITOR='vim'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias t='tmux attach || tmux new-session\; split-window -h'
+alias ws='z ~/workspace'
 
+# pyenv path
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -128,4 +129,13 @@ export PATH=$PATH:$HOME/.local/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# workaround for wsl, see: https://github.com/spaceship-prompt/spaceship-prompt/issues/1356#issuecomment-1579970699
+SPACESHIP_PROMPT_ASYNC=false
+source ~/.zsh/spaceship/spaceship.zsh
+
+# this must be at the end
+eval "$(zoxide init zsh)"
