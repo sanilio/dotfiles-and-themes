@@ -1,0 +1,8 @@
+[user]
+	name = sanil
+	email = sanilio@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+
