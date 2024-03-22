@@ -25,5 +25,8 @@ autocmd FileType python AutoFormatBuffer black
 " For Go, use gofmt for formatting
 autocmd FileType go AutoFormatBuffer gofmt
 
-" Set the colorscheme to gruvbox
+" Set the colorscheme
+colorscheme catppuccin_mocha
+
+" Enable true colors
 set termguicolors
