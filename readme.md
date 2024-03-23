@@ -7,6 +7,7 @@
     - [conf](https://alacritty.org/config-alacritty.html) location: `%APPDATA%\alacritty\alacritty.toml`
     - need to download some stuff for mouse: https://github.com/alacritty/alacritty/issues/1663#issuecomment-1917418514
   - mac:
+- tmux will be installed. avoid tabs, use tmux panes and windows
 
 ## 🐚 zsh, oh-my-zsh
 
@@ -29,10 +30,13 @@
   - tmux theme
   - vscode extension
 
-## 📝 vscode
+## 📝 editor
 
-- https://code.visualstudio.com/download
-- settings have been synced to github
+- vscode as main editor: https://code.visualstudio.com/download
+  - settings have been synced to github
+- keep an eye on [zed](https://zed.dev/), written in rust, once extensions are available could be a better option
+- jetbreains (pycharm, goland) for debugging or pro dev
+- vimrc included as well,
 
 ## 🚀 leggo!
 
