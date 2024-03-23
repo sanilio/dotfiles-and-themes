@@ -1,24 +1,24 @@
 # Terminal, shell, editor, font and theme setup
 
-## 🖥️ Alacritty terminal emulator
+## 🖥️ [Alacritty](https://github.com/alacritty/alacritty) terminal emulator
 
 - download and install first
   - windows: https://github.com/alacritty/alacritty/releases/download/v0.13.1/Alacritty-v0.13.1-installer.msi
-    - conf location: `%APPDATA%\alacritty\alacritty.toml`
+    - [conf](https://alacritty.org/config-alacritty.html) location: `%APPDATA%\alacritty\alacritty.toml`
     - need to download some stuff for mouse: https://github.com/alacritty/alacritty/issues/1663#issuecomment-1917418514
-  - mac: `brew install alacritty`
+  - mac:
 
 ## 🐚 zsh, oh-my-zsh
 
-- main shell, with oh-my-zsh for plugins
+- main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
 
 ## 🖋️ font
 
-- firacode
-  - good for alacritty, keeping it consistent for now
+- [firacode](https://github.com/tonsky/FiraCode)
+  - works in alacritty, keeping it consistent across for now
   - download, right click to install: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip
-- monaspace
+- [monaspace](https://monaspace.githubnext.com/)
   - cool but not compatible with alacritty, keep an eye on support
 
 ## 🎨 theme
@@ -26,6 +26,7 @@
 - [catpuccin](https://github.com/catppuccin/catppuccin), installed as:
   - alacritty theme
   - vim theme
+  - tmux theme
   - vscode extension
 
 ## 📝 vscode
@@ -41,9 +42,9 @@
 
 - next we update apt and install dependencies
 
-  - `sudo apt update && sudo apt install -y zsh fzf zsh-autosuggestions zsh-syntax-highlighting`
+  - `sudo apt update && sudo apt install -y zsh fzf tmux zsh-autosuggestions zsh-syntax-highlighting`
 
-- install oh-my-zsh:
+- install oh-my-zsh
 
   - `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
   - plugins
