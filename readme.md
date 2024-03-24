@@ -30,13 +30,22 @@
   - tmux theme
   - vscode extension
 
+## 🦙 llm
+
+- github copilot is solid, integrates so well in vscode, and relatively cheap.
+- [ollama](https://ollama.com/download) is very cool. you can use whichever models you like
+  - install, pull model, run `ollama serve`
+  - in vscode, activate the twinny extension, and select the models for chat (instruct) and auto-complete FIM (fill in the middle)
+  - free, private, leverages gpu
+  - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
+
 ## 📝 editor
 
 - vscode as main editor: https://code.visualstudio.com/download
   - settings have been synced to github
 - keep an eye on [zed](https://zed.dev/), written in rust, once extensions are available could be a better option
 - jetbreains (pycharm, goland) for debugging or pro dev
-- vimrc included as well,
+- vimrc included as well
 
 ## 🚀 leggo!
 
