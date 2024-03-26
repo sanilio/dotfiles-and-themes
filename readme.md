@@ -13,6 +13,54 @@
 
 - main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
+  - consider removing oh my zsh altogether, need to figure out how to keep plugins
+- currently using [powerlevel10k](https://github.com/romkatv/powerlevel10k) prompt/theme
+  - faster than using [starship]https://starship.rs/guide/) prompt, has [instant and transient prompt](https://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompt)
+  - and starship is faster than [spaceship](https://spaceship-prompt.sh/)
+- github copilot in the shell, [gh cli](https://cli.github.com/) required
+
+## 📝 editor
+
+- vscode as main editor: https://code.visualstudio.com/download
+  - settings have been synced to github
+- keep an eye on [zed](https://zed.dev/), written in rust, once extensions are available could be a better option
+- jetbreains (pycharm, goland) for debugging or pro dev
+- vimrc included as well
+
+## 🦊 browser
+
+- firefox has been solid, sync across devices
+- [Tree Style Tab](https://github.com/piroor/treestyletab)
+  - add css to remove top tabs and recenter search
+    - for windows, place in `C:\Users\{user}\AppData\Roaming\Mozilla\Firefox\Profiles\{profile, most recent}\chrome\userChrome.css`
+- ctrl+pgup/pgdn for tab switching, not ideal for our keebs
+  - need to figure out how to change default alt+arrow behavior in firefox
+  - `autoconfig.cfg` seems to be closest option, seems too hacky
+
+## 💾 operating system
+
+- windows, with ubuntu wsl
+  - use windows setup from chris titus tech
+  - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+    - `winget install Microsoft.PowerToys --source winget`
+    - enable FancyZones, override windows snap, create layouts
+      - kb shortcuts: `win+shift+arrow` to move window, `win+arrow` to snap
+        - cycling through windows cannot be set yet, need to use [autohotkey](https://www.autohotkey.com/) which seems like a chore
+          - [\[FZ\] \- hotkey to switch focus between zones · Issue \#15067 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/15067 "[FZ] - hotkey to switch focus between zones · Issue #15067 · microsoft/PowerToys")
+          - [glzr\-io\/glazewm\: GlazeWM is a tiling window manager for Windows inspired by i3 and Polybar\.](https://github.com/glzr-io/glazewm "glzr-io/glazewm: GlazeWM is a tiling window manager for Windows inspired by i3 and Polybar.")
+          - [Change active window\/zone with keyboard · Issue \#25831 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/25831 "Change active window/zone with keyboard · Issue #25831 · microsoft/PowerToys")
+          - [\[FancyZones\] Map keyboard shortcuts to zones directly to zone windows quicker · Issue \#492 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/492 "[FancyZones] Map keyboard shortcuts to zones directly to zone windows quicker · Issue #492 · microsoft/PowerToys")
+          -
+
+## 🦙 llm
+
+- github copilot is solid, integrates so well in vscode, and relatively cheap.
+  - also available in the shell
+- [ollama](https://ollama.com/download) is very cool. you can use whichever models you like
+  - install, pull model, run `ollama serve`
+  - in vscode, activate the twinny extension, and select the models for chat (instruct) and auto-complete FIM (fill in the middle)
+  - free, private, leverages gpu
+  - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
 
 ## 🖋️ font
 
@@ -28,34 +76,20 @@
   - alacritty theme
   - vim theme
   - tmux theme
+  - firefox theme via color extension
   - vscode extension
-
-## 🦙 llm
-
-- github copilot is solid, integrates so well in vscode, and relatively cheap.
-- [ollama](https://ollama.com/download) is very cool. you can use whichever models you like
-  - install, pull model, run `ollama serve`
-  - in vscode, activate the twinny extension, and select the models for chat (instruct) and auto-complete FIM (fill in the middle)
-  - free, private, leverages gpu
-  - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
-
-## 📝 editor
-
-- vscode as main editor: https://code.visualstudio.com/download
-  - settings have been synced to github
-- keep an eye on [zed](https://zed.dev/), written in rust, once extensions are available could be a better option
-- jetbreains (pycharm, goland) for debugging or pro dev
-- vimrc included as well
 
 ## 🚀 leggo!
 
-- first we `git clone` the repo to `~/.config/dotfiles-and-themes`
+- first, we update apt and install dependencies
+
+  - `sudo apt update && sudo apt install -y zsh git tmux fzf zsh-autosuggestions zsh-syntax-highlighting`
+
+- install alacritty
+
+- then we `git clone` the repo to `~/.config/dotfiles-and-themes`
 
   - on windows, it's the Users dir `C:\Users\{user}`. in powershell, `~` points to it.
-
-- next we update apt and install dependencies
-
-  - `sudo apt update && sudo apt install -y zsh fzf tmux zsh-autosuggestions zsh-syntax-highlighting`
 
 - install oh-my-zsh
 

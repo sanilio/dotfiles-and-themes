@@ -1,0 +1,26 @@
+/* for windows, place in C:\Users\{user}\AppData\Roaming\Mozilla\Firefox\Profiles\{profile, most recent}\chrome\userChrome.css */
+
+/* hide top tabs toolbar, even min, max and close window */
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar>.toolbar-items {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+#titlebar {
+    appearance: none !important;
+    height: 0px !important;
+}
+
+#titlebar>toolbar-menubar {
+    margin-top: 0px;
+}
+
+#TabsToolbar {
+    min-width: 0px !important;
+    min-height: 0px !important;
+}
