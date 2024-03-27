@@ -14,6 +14,7 @@
 - main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
   - consider removing oh my zsh altogether, need to figure out how to keep plugins
+  - fishshell also looks cool
 - currently using [powerlevel10k](https://github.com/romkatv/powerlevel10k) prompt/theme
   - faster than using [starship]https://starship.rs/guide/) prompt, has [instant and transient prompt](https://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompt)
   - and starship is faster than [spaceship](https://spaceship-prompt.sh/)
@@ -50,7 +51,7 @@
           - [glzr\-io\/glazewm\: GlazeWM is a tiling window manager for Windows inspired by i3 and Polybar\.](https://github.com/glzr-io/glazewm "glzr-io/glazewm: GlazeWM is a tiling window manager for Windows inspired by i3 and Polybar.")
           - [Change active window\/zone with keyboard · Issue \#25831 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/25831 "Change active window/zone with keyboard · Issue #25831 · microsoft/PowerToys")
           - [\[FancyZones\] Map keyboard shortcuts to zones directly to zone windows quicker · Issue \#492 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/492 "[FancyZones] Map keyboard shortcuts to zones directly to zone windows quicker · Issue #492 · microsoft/PowerToys")
-          -
+    - enables alt+space for spotlight like mac
 
 ## 🦙 llm
 
@@ -78,18 +79,22 @@
   - tmux theme
   - firefox theme via color extension
   - vscode extension
+  - available in jetbrains plugins as well
 
 ## 🚀 leggo!
 
-- first, we update apt and install dependencies
-
-  - `sudo apt update && sudo apt install -y zsh git tmux fzf zsh-autosuggestions zsh-syntax-highlighting`
+- first, on windows, install ubuntu wsl
 
 - install alacritty
 
-- then we `git clone` the repo to `~/.config/dotfiles-and-themes`
+- launch, make sure we're in WSL, and update apt and install dependencies
 
-  - on windows, it's the Users dir `C:\Users\{user}`. in powershell, `~` points to it.
+  - in case we're not in WSL, try running `wsl` to get there.
+    - otherwise can launch ubuntu from the start menu until we get alacritty configured
+  - `sudo apt update && sudo apt install -y zsh git tmux fzf zsh-autosuggestions zsh-syntax-highlighting`
+
+- then we `git clone` the repo to `~/.config/dotfiles-and-themes`
+- run `./create_symlinks.sh --alacritty_win` here to get the terminal lookin ✨
 
 - install oh-my-zsh
 
@@ -123,4 +128,4 @@
   - `pyenv global 3.11.3`
 
 - then we create symlinks to the conf files in the repo
-  - `./create_symlinks.sh`
+  - `./create_symlinks.sh --all`

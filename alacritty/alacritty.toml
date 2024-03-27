@@ -1,4 +1,6 @@
-import = ["C:/Users/sanil/AppData/Roaming/alacritty/catppuccin-mocha.toml"]
+import = [
+    "C:\\Users\\sanil\\AppData\\Roaming\\alacritty\\catppuccin_mocha.toml",
+]
 
 # for windows
 [shell]
@@ -21,6 +23,3 @@ normal = { family = "FiraCode Nerd Font", style = "Retina" }
 bold = { family = "FiraCode Nerd Font", style = "Bold" }
 italic = { family = "FiraCode Nerd Font", style = "Italic" }
 bold_italic = { family = "FiraCode Nerd Font", style = "Bold Italic" }
-
-[history]
-scrollback = 10000

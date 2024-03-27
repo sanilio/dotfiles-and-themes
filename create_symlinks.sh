@@ -1,7 +1,17 @@
 #!/bin/bash
 
-# Define the base directory
+: '
+This script creates symlinks for the dotfiles in this repository.
+The script takes the following arguments:
+--zsh: creates a symlink for the .zshrc file
+--tmux: creates a symlink for the .tmux.conf file
+--vim: creates a symlink for the .vimrc file
+--git: creates a symlink for the .gitconfig file
+--all: creates symlinks for all the files
+'
+
 base_dir=~/.config/dotfiles-and-themes
+alacritty_windows=/mnt/c/Users/sanil/AppData/Roaming/alacritty
 
 create_symlink() {
     local source_file=$1
@@ -28,11 +38,20 @@ create_vim() {
     create_symlink "$base_dir/vim/.vim/colors/catppuccin_mocha.vim" "$HOME/.vim/colors/catppuccin_mocha.vim"
 }
 
+create_alacritty_windows() {
+    mkdir -p alacritty_windows
+    # symlinks are not supported WSL -> Windows yet, so we copy
+    cp "$base_dir/alacritty/alacritty.toml" "$alacritty_windows/alacritty.toml"
+    cp "$base_dir/alacritty/catppuccin-mocha.toml" "$alacritty_windows/catppuccin_mocha.toml"
+    echo "Copied alacritty config files to $alacritty_windows"
+}
+
 create_git() {
     create_symlink "$base_dir/git/.gitconfig" "$HOME/.gitconfig"
 }
 
 create_all() {
+    create_alacritty_windows
     create_zsh
     create_tmux
     create_vim
@@ -42,6 +61,10 @@ create_all() {
 for arg in "$@"
 do
     case $arg in
+        --alacritty_win)
+        create_alacritty_windows
+        shift
+        ;;
         --zsh)
         create_zsh
         shift
