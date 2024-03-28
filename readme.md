@@ -1,6 +1,18 @@
 # Terminal, shell, editor, font and theme setup
 
-## 🖥️ [Alacritty](https://github.com/alacritty/alacritty) terminal emulator
+## Table of Contents
+
+- [🖥️ Terminal](#terminal)
+- [🐚 Shell](#shell)
+- [📝 Editor](#editor)
+- [🦊 Browser](#browser)
+- [💾 Operating System](#os)
+- [🦙 LLM](#llm)
+- [🖋️ Font](#font)
+- [🎨 Theme](#theme)
+- [🚀 Leggo!!](#leggo)
+
+## 🖥️ [Alacritty](https://github.com/alacritty/alacritty) terminal emulator <a name="#terminal"></a>
 
 - download and install first
   - windows: https://github.com/alacritty/alacritty/releases/download/v0.13.1/Alacritty-v0.13.1-installer.msi
@@ -9,18 +21,18 @@
   - mac:
 - tmux will be installed. avoid tabs, use tmux panes and windows
 
-## 🐚 zsh, oh-my-zsh
+## 🐚 Shell <a name="#shell"></a>
 
 - main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
   - consider removing oh my zsh altogether, need to figure out how to keep plugins
   - fishshell also looks cool
 - currently using [powerlevel10k](https://github.com/romkatv/powerlevel10k) prompt/theme
-  - faster than using [starship]https://starship.rs/guide/) prompt, has [instant and transient prompt](https://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompt)
+  - faster than using [starship](https://starship.rs/guide/), has [instant and transient prompt](https://github.com/romkatv/powerlevel10k/blob/master/README.md#instant-prompt)
   - and starship is faster than [spaceship](https://spaceship-prompt.sh/)
 - github copilot in the shell, [gh cli](https://cli.github.com/) required
 
-## 📝 editor
+## 📝 Editor <a name="#editor"></a>
 
 - vscode as main editor: https://code.visualstudio.com/download
   - settings have been synced to github
@@ -28,7 +40,7 @@
 - jetbreains (pycharm, goland) for debugging or pro dev
 - vimrc included as well
 
-## 🦊 browser
+## 🦊 Browser <a name="#browser"></a>
 
 - firefox has been solid, sync across devices
 - [Tree Style Tab](https://github.com/piroor/treestyletab)
@@ -37,8 +49,9 @@
 - ctrl+pgup/pgdn for tab switching, not ideal for our keebs
   - need to figure out how to change default alt+arrow behavior in firefox
   - `autoconfig.cfg` seems to be closest option, seems too hacky
+  - maybe can use via or other keeb software, macro?
 
-## 💾 operating system
+## 💾 Operating System <a name="#os"></a>
 
 - windows, with ubuntu wsl
   - use windows setup from chris titus tech
@@ -52,8 +65,21 @@
           - [Change active window\/zone with keyboard · Issue \#25831 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/25831 "Change active window/zone with keyboard · Issue #25831 · microsoft/PowerToys")
           - [\[FancyZones\] Map keyboard shortcuts to zones directly to zone windows quicker · Issue \#492 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/492 "[FancyZones] Map keyboard shortcuts to zones directly to zone windows quicker · Issue #492 · microsoft/PowerToys")
     - enables alt+space for spotlight like mac
+  - use win+1, win+2, etc for taskbar shortcuts
+    1. win+1: firefox
+    2. win+2: alacritty
+    3. win+3: vscode
+    4. win+4: discord
+    5. win+5: spotify
+    6. win+6: heynote
+    7. win+7: pycharm
+    8. win+8: steam
+    9. win+9: sumatra pdf
+    10. win+0: explorer
+    11. win terminal
+    12. goland
 
-## 🦙 llm
+## 🦙 LLM <a name="#llm"></a>
 
 - github copilot is solid, integrates well in vscode and jetbrains, and relatively cheap.
   - also available in the shell
@@ -66,7 +92,7 @@
   - free, private, leverages gpu
   - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
 
-## 🖋️ font
+## 🖋️ Font <a name="#font"></a>
 
 - [firacode](https://github.com/tonsky/FiraCode)
   - works in alacritty, keeping it consistent across for now
@@ -74,7 +100,7 @@
 - [monaspace](https://monaspace.githubnext.com/)
   - cool but not compatible with alacritty, keep an eye on support
 
-## 🎨 theme
+## 🎨 Theme <a name="#theme"></a>
 
 - [catpuccin](https://github.com/catppuccin/catppuccin), installed as:
   - alacritty theme
@@ -85,9 +111,9 @@
   - available in jetbrains plugins as well
   - can apply to SumatraPDF, but a little janky
 
-## 🚀 leggo!
+## 🚀 Leggo! <a name="#leggo"></a>
 
-- first, on windows, install ubuntu wsl
+- install ubuntu wsl
 
 - install alacritty
 
