@@ -12,7 +12,7 @@
 - [🎨 Theme](#theme)
 - [🚀 Leggo!!](#leggo)
 
-## 🖥️ [Alacritty](https://github.com/alacritty/alacritty) terminal emulator <a name="#terminal"></a>
+## 🖥️ Terminal <a id="#terminal"></a>
 
 - download and install first
   - windows: https://github.com/alacritty/alacritty/releases/download/v0.13.1/Alacritty-v0.13.1-installer.msi
@@ -21,7 +21,7 @@
   - mac:
 - tmux will be installed. avoid tabs, use tmux panes and windows
 
-## 🐚 Shell <a name="#shell"></a>
+## 🐚 Shell <a id="#shell"></a>
 
 - main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
@@ -32,7 +32,7 @@
   - and starship is faster than [spaceship](https://spaceship-prompt.sh/)
 - github copilot in the shell, [gh cli](https://cli.github.com/) required
 
-## 📝 Editor <a name="#editor"></a>
+## 📝 Editor <a id="#editor"></a>
 
 - vscode as main editor: https://code.visualstudio.com/download
   - settings have been synced to github
@@ -40,7 +40,7 @@
 - jetbreains (pycharm, goland) for debugging or pro dev
 - vimrc included as well
 
-## 🦊 Browser <a name="#browser"></a>
+## 🦊 Browser <a id="#browser"></a>
 
 - firefox has been solid, sync across devices
 - [Tree Style Tab](https://github.com/piroor/treestyletab)
@@ -51,7 +51,7 @@
   - `autoconfig.cfg` seems to be closest option, seems too hacky
   - maybe can use via or other keeb software, macro?
 
-## 💾 Operating System <a name="#os"></a>
+## 💾 Operating System <a id="#os"></a>
 
 - windows, with ubuntu wsl
   - use windows setup from chris titus tech
@@ -79,7 +79,7 @@
     11. win terminal
     12. goland
 
-## 🦙 LLM <a name="#llm"></a>
+## 🦙 LLM <a id="#llm"></a>
 
 - github copilot is solid, integrates well in vscode and jetbrains, and relatively cheap.
   - also available in the shell
@@ -92,7 +92,7 @@
   - free, private, leverages gpu
   - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
 
-## 🖋️ Font <a name="#font"></a>
+## 🖋️ Font <a id="#font"></a>
 
 - [firacode](https://github.com/tonsky/FiraCode)
   - works in alacritty, keeping it consistent across for now
@@ -100,7 +100,7 @@
 - [monaspace](https://monaspace.githubnext.com/)
   - cool but not compatible with alacritty, keep an eye on support
 
-## 🎨 Theme <a name="#theme"></a>
+## 🎨 Theme <a id="#theme"></a>
 
 - [catpuccin](https://github.com/catppuccin/catppuccin), installed as:
   - alacritty theme
@@ -111,7 +111,7 @@
   - available in jetbrains plugins as well
   - can apply to SumatraPDF, but a little janky
 
-## 🚀 Leggo! <a name="#leggo"></a>
+## 🚀 Leggo! <a id="#leggo"></a>
 
 - install ubuntu wsl
 
