@@ -121,9 +121,10 @@ export EDITOR='vim'
 
 alias t='tmux attach || tmux new-session\; split-window -h\; split-window -v\;'
 alias ws='z ~/workspace'
-alias la='ls -larth'
 alias win='z /mnt/c/Users/sanil'
 alias la='ls -larth'
+alias ghcs='gh copilot suggest'
+alias ghce='gh copilot explain'
 
 # pyenv path
 export PYENV_ROOT="$HOME/.pyenv"

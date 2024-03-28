@@ -55,8 +55,11 @@
 
 ## 🦙 llm
 
-- github copilot is solid, integrates so well in vscode, and relatively cheap.
+- github copilot is solid, integrates well in vscode and jetbrains, and relatively cheap.
   - also available in the shell
+    - first install the [gh cli](https://cli.github.com/)
+    - then `gh auth login`
+    - install [gh copilot](https://docs.github.com/en/copilot/github-copilot-in-the-cli/using-github-copilot-in-the-cli)
 - [ollama](https://ollama.com/download) is very cool. you can use whichever models you like
   - install, pull model, run `ollama serve`
   - in vscode, activate the twinny extension, and select the models for chat (instruct) and auto-complete FIM (fill in the middle)
@@ -80,6 +83,7 @@
   - firefox theme via color extension
   - vscode extension
   - available in jetbrains plugins as well
+  - can apply to SumatraPDF, but a little janky
 
 ## 🚀 leggo!
 
@@ -96,7 +100,7 @@
 - then we `git clone` the repo to `~/.config/dotfiles-and-themes`
 - run `./create_symlinks.sh --alacritty_win` here to get the terminal lookin ✨
 
-- install oh-my-zsh
+- install [oh my zsh](https://ohmyz.sh/)
 
   - `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
   - plugins
