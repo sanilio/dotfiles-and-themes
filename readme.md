@@ -12,7 +12,9 @@
 - [🎨 Theme](#theme)
 - [🚀 Leggo!!](#leggo)
 
-## 🖥️ Terminal <a id="#terminal"></a>
+<div id="terminal" />
+
+## 🖥️ Terminal
 
 - download and install first
   - windows: https://github.com/alacritty/alacritty/releases/download/v0.13.1/Alacritty-v0.13.1-installer.msi
@@ -21,7 +23,9 @@
   - mac:
 - tmux will be installed. avoid tabs, use tmux panes and windows
 
-## 🐚 Shell <a id="#shell"></a>
+<div id="shell" />
+
+## 🐚 Shell
 
 - main shell is zsh, with [oh my zsh](https://ohmyz.sh/) for plugins
   - installation and conf addressed below
@@ -32,7 +36,9 @@
   - and starship is faster than [spaceship](https://spaceship-prompt.sh/)
 - github copilot in the shell, [gh cli](https://cli.github.com/) required
 
-## 📝 Editor <a id="#editor"></a>
+<div id="editor" />
+
+## 📝 Editor
 
 - vscode as main editor: https://code.visualstudio.com/download
   - settings have been synced to github
@@ -40,7 +46,9 @@
 - jetbreains (pycharm, goland) for debugging or pro dev
 - vimrc included as well
 
-## 🦊 Browser <a id="#browser"></a>
+<div id="browser" />
+
+## 🦊 Browser
 
 - firefox has been solid, sync across devices
 - [Tree Style Tab](https://github.com/piroor/treestyletab)
@@ -51,7 +59,9 @@
   - `autoconfig.cfg` seems to be closest option, seems too hacky
   - maybe can use via or other keeb software, macro?
 
-## 💾 Operating System <a id="#os"></a>
+<div id="os" />
+
+## 💾 Operating System
 
 - windows, with ubuntu wsl
   - use windows setup from chris titus tech
@@ -66,20 +76,22 @@
           - [\[FancyZones\] Map keyboard shortcuts to zones directly to zone windows quicker · Issue \#492 · microsoft\/PowerToys](https://github.com/microsoft/PowerToys/issues/492 "[FancyZones] Map keyboard shortcuts to zones directly to zone windows quicker · Issue #492 · microsoft/PowerToys")
     - enables alt+space for spotlight like mac
   - use win+1, win+2, etc for taskbar shortcuts
-    1. win+1: firefox
-    2. win+2: alacritty
-    3. win+3: vscode
-    4. win+4: discord
-    5. win+5: spotify
-    6. win+6: heynote
-    7. win+7: pycharm
-    8. win+8: steam
-    9. win+9: sumatra pdf
-    10. win+0: explorer
-    11. win terminal
-    12. goland
+    - win+1: firefox
+    - win+2: alacritty
+    - win+3: vscode
+    - win+4: discord
+    - win+5: spotify
+    - win+6: heynote
+    - win+7: pycharm
+    - win+8: steam
+    - win+9: sumatra pdf
+    - win+0: explorer
+    - win terminal
+    - goland
 
-## 🦙 LLM <a id="#llm"></a>
+<div id="llm" />
+
+## 🦙 LLM
 
 - github copilot is solid, integrates well in vscode and jetbrains, and relatively cheap.
   - also available in the shell
@@ -92,7 +104,9 @@
   - free, private, leverages gpu
   - apparently you can train your own models, perhaps for a specific language or project. could be useful for a large project with a lot of domain-specific terms
 
-## 🖋️ Font <a id="#font"></a>
+<div id="font" />
+
+## 🖋️ Font
 
 - [firacode](https://github.com/tonsky/FiraCode)
   - works in alacritty, keeping it consistent across for now
@@ -100,7 +114,9 @@
 - [monaspace](https://monaspace.githubnext.com/)
   - cool but not compatible with alacritty, keep an eye on support
 
-## 🎨 Theme <a id="#theme"></a>
+<div id="theme" />
+
+## 🎨 Theme
 
 - [catpuccin](https://github.com/catppuccin/catppuccin), installed as:
   - alacritty theme
@@ -111,7 +127,9 @@
   - available in jetbrains plugins as well
   - can apply to SumatraPDF, but a little janky
 
-## 🚀 Leggo! <a id="#leggo"></a>
+<div id="leggo" />
+
+## 🚀 Leggo!
 
 - install ubuntu wsl
 
