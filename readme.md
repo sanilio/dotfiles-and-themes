@@ -53,6 +53,7 @@
 - firefox has been solid, sync across devices
 - [Tree Style Tab](https://github.com/piroor/treestyletab)
   - add css to remove top tabs and recenter search
+    - activate in about:config `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
     - for windows, place in `C:\Users\{user}\AppData\Roaming\Mozilla\Firefox\Profiles\{profile, most recent}\chrome\userChrome.css`
 - ctrl+pgup/pgdn for tab switching, not ideal for our keebs
   - need to figure out how to change default alt+arrow behavior in firefox
