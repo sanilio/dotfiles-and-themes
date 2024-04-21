@@ -1,15 +1,16 @@
-import = [
-    "C:\\Users\\sanil\\AppData\\Roaming\\alacritty\\catppuccin_mocha.toml",
-]
-
 # for windows
-[shell]
-args = ["--cd ~"]
-program = 'C:\Windows\System32\wsl.exe'
+# import = [
+#     "C:\\Users\\sanil\\AppData\\Roaming\\alacritty\\catppuccin_mocha.toml",
+# ]
+# [shell]
+# args = ["--cd ~"]
+# program = 'C:\Windows\System32\wsl.exe'
 
 # for linux
-# [shell]
-# program = '/usr/bin/zsh'
+import = ["/home/sanil/.config/alacritty/catppuccin_mocha.toml"]
+
+[shell]
+program = '/usr/bin/zsh'
 
 [env]
 TERM = "xterm-256color"
