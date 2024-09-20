@@ -46,6 +46,13 @@ create_alacritty_windows() {
     echo "Copied alacritty config files to $alacritty_windows"
 }
 
+create_alacritty_linux() {
+    mkdir -p ~/.config/alacritty
+    create_symlink "$base_dir/alacritty/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
+    create_symlink "$base_dir/alacritty/catppuccin-mocha.toml" "$HOME/.config/alacritty/catppuccin_mocha.toml"
+    echo "Copied alacritty config files to $HOME/.config/alacritty"
+}
+
 create_git() {
     create_symlink "$base_dir/git/.gitconfig" "$HOME/.gitconfig"
 }
@@ -63,6 +70,10 @@ do
     case $arg in
         --alacritty_win)
         create_alacritty_windows
+        shift
+        ;;
+        --alacritty_linux)
+        create_alacritty_linux
         shift
         ;;
         --zsh)

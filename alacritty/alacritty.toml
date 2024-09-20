@@ -20,7 +20,13 @@ dimensions = { columns = 160, lines = 60 }
 dynamic_padding = true
 
 [font]
-normal = { family = "FiraCode Nerd Font", style = "Retina" }
-bold = { family = "FiraCode Nerd Font", style = "Bold" }
-italic = { family = "FiraCode Nerd Font", style = "Italic" }
-bold_italic = { family = "FiraCode Nerd Font", style = "Bold Italic" }
+normal = { family = "Fira Code", style = "Regular" }
+bold = { family = "Fira Code", style = "Bold" }
+italic = { family = "Fira Code", style = "Regular" }
+bold_italic = { family = "Fira Code", style = "Bold" }
+
+# for windows
+# normal = { family = "FiraCode Nerd Font", style = "Retina" }
+# bold = { family = "FiraCode Nerd Font", style = "Bold" }
+# italic = { family = "FiraCode Nerd Font", style = "Italic" }
+# bold_italic = { family = "FiraCode Nerd Font", style = "Bold Italic" }
