@@ -7,9 +7,9 @@
 # program = 'C:\Windows\System32\wsl.exe'
 
 # for linux
-import = ["/home/sanil/.config/alacritty/catppuccin_mocha.toml"]
+general.import = ["/home/sanil/.config/alacritty/catppuccin_mocha.toml"]
 
-[shell]
+[terminal.shell]
 program = '/usr/bin/zsh'
 
 [env]

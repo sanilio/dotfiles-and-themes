@@ -143,7 +143,10 @@ export NVM_DIR="$HOME/.nvm"
 
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export MOZ_ENABLE_WAYLAND=1  # enable wayland for firefox, gesture support
 
+# TeX Live Path for LaTeX
+export PATH=$PATH:/usr/local/texlive/2024/bin/x86_64-linux
 
 # this must be at the end
 eval "$(zoxide init zsh)"
